@@ -48,3 +48,77 @@ body {
   font-family: "barlow", sans-serif;
   font-weight: 400;
 }
+
+.content-1 {
+  height: 56vh;
+  overflow: hidden;
+}
+
+.bg-rectangle {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  height: 56vh;
+  background-color: var(--grayish-blue);
+  border-radius: 0 0 0 12vw;
+}
+
+.img-devices {
+  position: relative;
+  top: -38vh;
+  right: -2vw;
+  height: 32vh;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 6vw;
+  justify-content: space-between;
+  top: -86vh;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  padding: 24px 0;
+  width: 88vw;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--light-grayish-blue);
+  border-radius: 2px;
+  /*display: flex;*/
+  /*align-items: center;
+  display: none;*/
+}
+
+.nav-menu .link {
+  display: block;
+}
+
+.nav-menu .login-link-box {
+  border-top: 1px solid --grayish-blue;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.ham-btn {
+  position: relative;
+  border: none;
+  background: transparent;
+}
+
+.ham-btn img {
+  height: 20px;
+}
+
+.ham-btn .close-icon {
+  position: absolute;
+  width: 20px;
+  left: 9px;
+  display: none;
+}
