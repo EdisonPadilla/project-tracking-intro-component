@@ -47,6 +47,7 @@ body {
   font-size: 18px;
   font-family: "barlow", sans-serif;
   font-weight: 400;
+  color: var(--very-dark-blue);
 }
 
 .content-1 {
@@ -82,10 +83,14 @@ body {
 .nav-menu {
   position: absolute;
   top: 100%;
-  padding: 24px 0;
+  padding: 24px 4%;
   width: 88vw;
   text-align: center;
+  font-family: "barlowcondensed", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
   background-color: var(--light-grayish-blue);
   border-radius: 2px;
   /*display: flex;*/
@@ -97,8 +102,9 @@ body {
   display: block;
 }
 
-.nav-menu .login-link-box {
-  border-top: 1px solid --grayish-blue;
+.nav-menu .login-box {
+  color: var(--grayish-blue);
+  border-top: thin solid hsla(231, 7%, 65%, 0.3);
 }
 
 .logo {
@@ -121,4 +127,53 @@ body {
   width: 20px;
   left: 9px;
   display: none;
+}
+
+.content-2 {
+  padding: 6px 6vw;
+  text-transform: uppercase;
+}
+
+.content-2 .subtitle {
+  font-family: "barlowcondensed", sans-serif;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 2px;
+}
+
+.subtitle span {
+  margin-right: 12px;
+  padding: 2px 12px;
+  /* font-family: "barlowcondensed", sans-serif; */
+  font-weight: 700;
+  color: var(--light-grayish-blue);
+  background-color: var(--very-dark-blue);
+  border-radius: 28px;
+}
+
+.content-2 .title {
+  font-size: 30px;
+  /* font-family: "barlowcondensed", sans-serif; */
+  /* font-weight: 700; */
+}
+
+.content-2 .paragraph-1 {
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+.content-2 .paragraph-2 {
+  font-family: "barlowcondensed", sans-serif;
+  color: var(--dark-grayish-blue);
+}
+
+.paragraph-2 .demo-btn {
+  margin-right: 8px;
+  padding: 8px 10px;
+  color: var(--light-grayish-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--red);
+  border-radius: 8px;
+  outline: none;
 }
