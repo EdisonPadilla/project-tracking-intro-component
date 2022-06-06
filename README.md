@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution repository](https://github.com/EdisonPadilla/project-tracking-intro-component)
-- Live Site URL: [live site](https://edisonpadilla.github.io/insure-landing-page/)
+- Live Site URL: [live site](https://edisonpadilla.github.io/project-tracking-intro-component/)
 
 ## My process
 
