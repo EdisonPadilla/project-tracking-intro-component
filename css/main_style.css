@@ -50,34 +50,13 @@ body {
   color: var(--very-dark-blue);
 }
 
-.content-1 {
-  height: 56vh;
-  overflow: hidden;
-}
-
-.bg-rectangle {
-  position: relative;
-  left: 50%;
-  width: 50%;
-  height: 56vh;
-  background-color: var(--light-grayish-blue);
-  border-radius: 0 0 0 12vw;
-}
-
-.img-devices {
-  position: relative;
-  top: -38vh;
-  right: -2vw;
-  height: 32vh;
-}
-
 .nav-bar {
   position: absolute;
   top: 20px;
+  padding: 0 6vw;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 6vw;
   justify-content: space-between;
   z-index: 10;
 }
@@ -87,7 +66,6 @@ body {
   top: 100%;
   padding: 24px 4%;
   width: 88vw;
-  /* display: none; */
   text-align: center;
   font-family: "barlowcondensed", sans-serif;
   font-weight: 700;
@@ -103,12 +81,15 @@ body {
 
 .nav-menu.show {
   visibility: visible;
-  /* display: initial; */
   opacity: 1;
 }
 
 .nav-menu .link {
   display: block;
+}
+
+.nav-menu .link:hover {
+  text-decoration: underline;
 }
 
 .nav-menu .login-box {
@@ -151,6 +132,27 @@ body {
   opacity: 1;
 }
 
+.content-1 {
+  height: 56vh;
+  overflow: hidden;
+}
+
+.bg-rectangle {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  height: 56vh;
+  background-color: var(--light-grayish-blue);
+  border-radius: 0 0 0 12vw;
+}
+
+.img-devices {
+  position: relative;
+  top: -38vh;
+  right: -2vw;
+  height: 32vh;
+}
+
 .content-2 {
   padding: 6px 6vw;
   text-transform: uppercase;
@@ -165,7 +167,6 @@ body {
 .subtitle span {
   margin-right: 12px;
   padding: 2px 12px;
-  /* font-family: "barlowcondensed", sans-serif; */
   font-weight: 700;
   color: var(--light-grayish-blue);
   background-color: var(--very-dark-blue);
@@ -174,8 +175,6 @@ body {
 
 .content-2 .title {
   font-size: 30px;
-  /* font-family: "barlowcondensed", sans-serif; */
-  /* font-weight: 700; */
 }
 
 .content-2 .paragraph-1 {
@@ -198,6 +197,37 @@ body {
   background-color: var(--red);
   border-radius: 8px;
   outline: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.paragraph-2 .demo-btn:hover {
+  background-color: hsla(0, 100%, 68%, 0.8);
+}
+
+@media screen and (min-width: 500px) {
+  .img-devices {
+    right: -24%;
+  }
+}
+
+footer .attribution {
+  margin: 16px 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.attribution a {
+  padding-bottom: 0.4em;
+  color: var(--dark-grayish-blue);
+  border-bottom: solid 2px transparent;
+  transition-duration: 0.5s;
+}
+
+.attribution a:hover {
+  color: var(--very-dark-blue);
+  border-color: var(--very-dark-blue);
 }
 
 @media screen and (min-width: 1024px) {
@@ -206,6 +236,34 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .nav-bar {
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-menu {
+    position: initial;
+    top: initial;
+    padding: 24px 16px;
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: initial;
+    background-color: transparent;
+    border-radius: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-menu .login-box {
+    border-top: none;
+  }
+
+  .ham-btn {
+    display: none;
   }
 
   .content-1,
@@ -227,44 +285,18 @@ body {
   .img-devices {
     top: -22vh;
     right: -2vw;
-    /* right: initial; */
     height: 52vh;
-  }
-
-  .nav-bar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    /* padding: 0 6vw;  */
-    justify-content: space-between;
-    z-index: 10;
-  }
-
-  .nav-menu {
-    position: initial;
-    top: initial;
-    padding: 24px 16px;
-    width: 44%;
-    text-align: center;
-    line-height: initial;
-    background-color: transparent;
-    border-radius: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-menu .login-box {
-    border-top: none;
-  }
-
-  .ham-btn {
-    display: none;
   }
 
   .content-2 {
     grid-column: 1/2;
+  }
+
+  .content-2 .paragraph-1 {
+    margin-bottom: 48px;
+  }
+
+  .content-2 .paragraph-2 {
+    margin-bottom: 0;
   }
 }
